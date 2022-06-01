@@ -1,0 +1,9 @@
+http://www.slideshare.net/loianeg/curso-java-bsico-exerccios-aulas-11-12-13
+
+Dica:
+
+Para escanear teclado: import java.util.Scanner;
+
+Definir scan: Scanner scan = new Scanner (System.in);
+
+Parei no 11

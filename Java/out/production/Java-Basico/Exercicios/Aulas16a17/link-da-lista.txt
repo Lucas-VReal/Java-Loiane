@@ -1,0 +1,8 @@
+http:////www.slideshare.net/loianeg/curso-java-basico-exercicios-aulas-16-17
+
+equalsIgnoreCase(Login) - checa se é igual desconsiderando o case sensitive
+
+int vetor []; - declara variavel do tipo vetor.
+vetor = new int[até tal n°]; - define até onde vai o vetor.
+
+Não sei: 13
