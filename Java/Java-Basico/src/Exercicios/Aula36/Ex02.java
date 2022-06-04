@@ -4,26 +4,65 @@ import java.util.Scanner;
 
 public class Ex02 {
     public static void main(String[] args) {
-        Curso curso = new Curso();
-        Aluno[] aluno = new Aluno[4];
-        curso.setAluno(aluno);
         Scanner scan = new Scanner(System.in);
-        curso.setAluno(aluno[0]).setNome("João");
-        System.out.println(aluno[0].getNome()]);
+
+        System.out.println("Entre com o nome do curso");
+        String nomeCurso = scan.nextLine();
+
+        System.out.println("Entre com o horário do curso");
+        String horario = scan.nextLine();
+
+        System.out.println("Entre com o nome do professor");
+        String nomeProfessor = scan.nextLine();
+
+        System.out.println("Entre com o departamento do professor");
+        String dep = scan.nextLine();
+
+        System.out.println("Entre com o e-mail do professor");
+        String email = scan.nextLine();
+
+        Curso curso = new Curso();
+        curso.setNome(nomeCurso);
+        curso.setHorario(horario);
+
+        Professor professor = new Professor();
+        professor.setNome(nomeProfessor);
+        professor.setDepartamento(dep);
+        professor.setEmail(email);
+
+        curso.setProfessor(professor);
+
+        System.out.println("-------Alunos-------");
+
+        Aluno [] alunos = new Aluno[5];
+        for (int i = 0; i < 5; i++){
+
+            scan.nextLine();
+
+            System.out.println("Entre com o nome do "+ (i+1)+ "° aluno");
+            String nomeAluno = scan.nextLine();
 
 
-        for (int i = 0; i < 4; i++){
-            System.out.println("Escreva o nome do " + (i+1) + "º Aluno: ");
-            String nome = scan.nextLine();
+            System.out.println("Entre com a matrícula de "+ nomeAluno+": ");
+            String matAluno = scan.nextLine();
 
-            aluno[i].setNome(nome);
-            aluno[i].setMatricula("0000" + i+1);
-            for (int n = 0; n < 4; n++) {
-                double[] nota = new double[3];
-                System.out.println("Qual foi a "+ (n+1) + "° Nota do " + nome + ": ");
-                nota[n] = scan.nextDouble();
-                aluno[i].setNota(new double[]{nota[n]}); // não aceita setNota(nota[n])
+            double[] notas = new double[4];
+
+            for (int n=0; n < 4; n++){
+                System.out.println("Entre com a "+ (n+1)+ "° nota: ");
+                notas[n] = scan.nextDouble();
             }
+
+            Aluno aluno = new Aluno();
+            aluno.setNome(nomeAluno);
+            aluno.setMatricula(matAluno);
+            aluno.setNotas(notas);
+
+            alunos[i] = aluno;
         }
+
+        curso.setAlunos(alunos);
+
+        System.out.println(curso.obterInfo());
     }
 }
