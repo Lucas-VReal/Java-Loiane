@@ -1,6 +1,6 @@
-package Aulas.Aula41;
+package Aulas.Aula42;
 
-public abstract class  Pessoa {
+public final class Pessoa { //final indica que a class não pode ser modificada
 
     private String nome;
     private String endereco;
@@ -49,7 +49,7 @@ public abstract class  Pessoa {
         this.cpf = cpf;
     }
 
-    public abstract String obterEtiquetaEndereco ();
+    //public abstract String obterEtiquetaEndereco ();
 
-    public abstract void imprimirEtiquetaDeEndereco();
+    //public abstract void imprimirEtiquetaDeEndereco();
 }

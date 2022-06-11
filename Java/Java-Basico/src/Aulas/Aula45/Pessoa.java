@@ -1,6 +1,6 @@
-package Aulas.Aula41;
+package Aulas.Aula45;
 
-public abstract class  Pessoa {
+public class Pessoa {
 
     private String nome;
     private String endereco;
@@ -49,7 +49,7 @@ public abstract class  Pessoa {
         this.cpf = cpf;
     }
 
-    public abstract String obterEtiquetaEndereco ();
-
-    public abstract void imprimirEtiquetaDeEndereco();
+    public String obterEtiquetaEndereco (){
+        return endereco;
+    }
 }
