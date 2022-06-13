@@ -1,0 +1,9 @@
+            Tratamento de Excessões no  Java
+
+ Try: Tenta executar o código
+ Catch: Captura a excessão
+ Throw: Não queremos tratar a excessão
+ Throws:
+ Finally: sempre será executado independente do successo do Try e Catch
+
+ Throwable: Superclasse e mãe de todas as Exceptions no Java

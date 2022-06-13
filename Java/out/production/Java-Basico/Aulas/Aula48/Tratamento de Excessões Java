@@ -1,0 +1,7 @@
+            Tratamento de Excessões no  Java
+
+ Try: Tenta executar o código
+ Catch: Captura a excessão
+ Throw:
+ Throws:
+ Finally: sempre será executado independente do successo do Try e Catch
